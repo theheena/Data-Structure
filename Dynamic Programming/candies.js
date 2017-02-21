@@ -11,12 +11,15 @@ function processData(input) {
         if(input[i+1]>input[i]){
             count[i+1]  = count[i] + 1;
         }
+    }
+    for(let i=input[0]-1;i>=1;i--){
         if(input[i] > input[i+1]){
             if(count[i]<=count[i+1]){
                 count[i] = count[i+1] + 1;
             }
         }
     }
+    
     for(let i = 1;i<=input[0];i++){
         temp = temp + count[i];
         //console.log(count[i]);
