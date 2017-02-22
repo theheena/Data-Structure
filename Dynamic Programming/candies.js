@@ -4,9 +4,11 @@ function processData(input) {
     let count = [];
     input = input.split("\n");
     input = input.map(Number);
+    
+    // input[0] contains the total number of students in class which is stored in n.
     let n = input[0];
 
-
+    // as index = 0 of input contains total number of students therefore loop begins from index = 1.
     for(let i = 1; i <= n; i++){
         count[i] = 1;
     }
