@@ -45,7 +45,10 @@ function processData(input) {
             }
             console.log(out);
         }
-    }
-    
-    
+    }  
 } 
+
+input = `5
+1 3 4 5 2`;
+
+processData(input);
