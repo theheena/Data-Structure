@@ -10,7 +10,8 @@ function processData(input) {
     arr2 = arr2.map(Number);
     arr = arr.map(Number);
     quickSort(arr, 0, n-1);
-    insertionSort(arr2, n)
+    insertionSort(arr2, n);
+    console.log(swaps);
     console.log(shifts-swaps);
 } 
 
@@ -54,7 +55,7 @@ function insertionSort(arr, n) {
     //console.log(shifts);
 }
 
-input = `5
-4 5 3 7 2`;
+input = `4
+2 5 3 1`;
 
 processData(input);
